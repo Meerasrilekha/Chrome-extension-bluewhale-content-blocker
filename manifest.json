@@ -1,0 +1,32 @@
+{
+    "name": "Bluewhale game content blocker Extension",
+    "version": "1.0",
+    "description": "An extension that can block content related to bluewhale game",
+
+    "icons": {
+        "500":"logo500.png"
+    },
+
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+
+    "permissions": [
+        "storage",
+        "activeTab",
+        "tabs",
+        "declarativeContent",
+        "background",
+        "webRequest",
+        "webRequestBlocking",
+        "http://*/*",
+        "https://*/*"
+    ],
+    
+    "background": {
+        "scripts": ["background.js"]
+        
+    },
+    "manifest_version": 2,
+    "web_accessible_resources": ["https://maker.ifttt.com/trigger/block bluewhale game content/json/with/key/bVvj2XYKrzSW_radkFVCsSJ6WuwPpUOZTotS76SUJ4m"]
+}
