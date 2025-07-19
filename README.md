@@ -14,7 +14,8 @@ Project description
  Settings Page
  <img width="1884" height="900" alt="image" src="https://github.com/user-attachments/assets/fcc9f045-3bc3-4171-abbe-b83f900aca18" />
 
-                                                           Pop-Up Page
+ Pop-Up Page
+                                         
  <img width="257" height="253" alt="image" src="https://github.com/user-attachments/assets/3ae2ee2b-ffae-446d-8446-9609b974b0bb" />
 
 
