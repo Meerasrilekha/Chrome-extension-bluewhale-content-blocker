@@ -8,6 +8,16 @@ Blue Whale Game is a dangerous online challenge associated with self-harm and ha
 Project description
  The primary goal of this project is to develop a robust and reliable Chrome extension that actively safeguards children from accessing BlueWhale Game content, thereby minimizing exposure to potentially harmful challenges. Through the implementation of intuitive parental controls, real-time notifications through email.
 
+ Blocked Page 
+ <img width="1903" height="859" alt="image" src="https://github.com/user-attachments/assets/fe5b205a-2c9d-4da0-b776-2681e07cc4db" />
+
+ Settings Page
+ <img width="1884" height="900" alt="image" src="https://github.com/user-attachments/assets/fcc9f045-3bc3-4171-abbe-b83f900aca18" />
+
+ Pop-up page
+ <img width="257" height="253" alt="image" src="https://github.com/user-attachments/assets/3ae2ee2b-ffae-446d-8446-9609b974b0bb" />
+
+
 Methodology
  1. Creating the Chrome extension. It requires a manifest file,
  background.js, and content scripts.js.
