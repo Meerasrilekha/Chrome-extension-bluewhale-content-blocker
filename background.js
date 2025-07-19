@@ -12,7 +12,11 @@ setInterval(checkSite, 500);
  */
 function blockSite() 
 {
-    chrome.tabs.update({url: "blockedSite.html"})
+
+
+    const blockedUrl = chrome.runtime.getURL("blockedSite.html");
+    chrome.tabs.update({url: blockedUrl});
+
 }
 
 /*

@@ -1,57 +1,30 @@
-[10:42, 30/04/2025] Meera: import pandas as pd
-
-# Define the data
-data = {
-    'boot_size' : [ 39, 38, 37, 39, 38, 35, 37, 36, 35, 40, 
-                    40, 36, 38, 39, 42, 42, 36, 36, 35, 41, 
-                    42, 38, 37, 35, 40, 36, 35, 39, 41, 37, 
-                    35, 41, 39, 41, 42, 42, 36, 37, 37, 39,
-                    42, 35, 36, 41, 41, 41, 39, 39, 35, 39
-                 ],
-    'harness_size': [ 58, 58, 52, 58, 57, 52, 55, 53, 49, 54,
-                59, 56, 53, 58, 57, 58, 56, 51, 50, 59,
-                59, 59, 55, 50, 55, 52, 53, 54, 61, 56,
-                55, 60, 57, 56, 61, 58, 53, 57, 57, 55,
-                60, 51, 52, 56, 55, 57, 58, 57, 51, 59
-                ]
-}
-
-# Convert to DataFrame
-df = pd.DataFrame(data)
-[10:42, 30/04/2025] Meera: def label_boot_size(size):
-    if size <= 36:
-        return "Small"
-    elif size <= 39:
-        return "Medium"
-    else:
-        return "Large"
-
-# Apply function
-df['boot_class'] = df['boot_size'].apply(label_boot_size)
-[10:42, 30/04/2025] Meera: from sklearn.linear_model import LogisticRegression
-from sklearn.preprocessing import LabelEncoder
-from sklearn.model_selection import train_test_split
-
-# Convert class labels to numeric
-label_encoder = LabelEncoder()
-df['boot_class_encoded'] = label_encoder.fit_transform(df['boot_class'])
-
-# Split data
-X = df[['harness_size']]
-y = df['boot_class_encoded']
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=1)
-
-# Train classifier
-clf = LogisticRegression(multi_class='ovr', solver='liblinear')
-clf.fit(X_train, y_train)
-[10:42, 30/04/2025] Meera: # Predict for a new harness size (e.g., 52.5)
-new_data = [[52.5]]
-predicted_class = clf.predict(new_data)
-
-# Decode back to class name
-class_label = label_encoder.inverse_transform(predicted_class)
-print("Predicted Boot Size Class:", class_label[0])
-[10:42, 30/04/2025] Meera: from sklearn.metrics import accuracy_score
-
-y_pred = clf.predict(X_test)
-print("Model Accuracy:", accuracy_score(y_test, y_pred)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Site Blocked</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+      background: black;
+    }
+    img {
+      width: 300px;
+      margin-bottom: 0px;
+    }
+    h1 {
+      color: #d32f2f;
+    }
+    p {
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <img src="logo500.png" alt="Logo">
+  <h1>Access Blocked</h1>
+  <p>This site has been blocked.</p>
+</body>
+</html>
